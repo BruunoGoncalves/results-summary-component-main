@@ -1,0 +1,222 @@
+:root {
+
+  /* Neutral Colors */
+  --white: hsl(0, 0%, 100%);
+  --pale-blue: hsl(221, 100%, 96%);
+  --light-lavender: hsl(241, 100%, 89%);
+  --dark-gray-blue: hsl(224, 30%, 27%);
+
+  /* Gradients */
+  --light-state-blue: hsl(252, 100%, 67%); /* background */
+  --light-royal-blue: hsl(241, 81%, 54%); /* background */
+  --violet-blue: hsla(256, 72%, 46%, 1); /* Circle */
+  --persian-blue: hsla(241, 72%, 46%, 0); /* Circle */
+
+  /* Primary */
+  --light-red: hsl(0, 100%, 67%);
+  --orange-yellow: hsl(39, 100%, 56%);
+  --green-teal: hsl(166, 100%, 37%);
+  --cobalt-blue: hsl(234, 85%, 45%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Hanken Grotesk', sans-serif;
+}
+
+
+body {
+  background: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+}
+
+main {
+  display: flex;
+}
+
+main .result {
+  background: linear-gradient(to top, var(--light-royal-blue), var(--light-state-blue));
+  width: 368px;
+  border-radius: 20px;
+  padding: 45px 61px 60px 61px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 1;
+}
+
+main .result h1 {
+  font-size: 25px;
+  color: var(--light-lavender);
+  font-weight: 700;
+  padding-bottom: 30px;
+}
+
+main .result .circle-gradient {
+  background: linear-gradient(to top, var(--persian-blue), var(--violet-blue));
+  border-radius: 50%;
+  height: 200px;
+  width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+main .result .circle-gradient h3 {
+  font-size: 75px;
+  font-weight: 800 ;
+  color: var(--white);
+}
+
+main .result .circle-gradient p {
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--light-lavender);
+}
+
+main .result h2 {
+  font-size: 33px;
+  color: var(--white);
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+main .result p {
+  font-size: 18px;
+  color: var(--pale-blue);
+  font-weight: 500;
+}
+
+section.summary {
+  padding: 45px 40px 50px 90px;
+  margin-left: -50px;
+  border-radius: 20px;
+  box-shadow: 5px 5px 20px var(--pale-blue);
+}
+
+section.summary h1 {
+  font-size: 25px;
+  color: var(--dark-gray-blue);
+  padding-bottom: 30px;
+}
+
+.reaction-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fff6f5;
+  width: 290px;
+  padding: 20px;
+  border-radius: 15px;
+}
+
+.reaction-card div{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 20px;
+  color: var(--light-red);
+}
+
+.card-summary {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.card-summary p{
+  font-size: 20px;
+  color: #bfbdcb;
+}
+
+.card-summary span{
+  color: var(--dark-gray-blue);
+  font-weight: 700;
+}
+
+.memory-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fffbf2;
+  width: 290px;
+  padding: 20px;
+  border-radius: 15px;
+}
+
+.memory-card div{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 20px;
+  color: var(--orange-yellow);
+}
+
+.verbal-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f2fbfa;
+  width: 290px;
+  padding: 20px;
+  border-radius: 15px;
+}
+
+.verbal-card div{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 20px;
+  color: var(--green-teal);
+}
+
+.visual-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f3f3ff;
+  width: 290px;
+  padding: 20px;
+  border-radius: 15px;
+}
+
+.visual-card div{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 20px;
+  color: var(--cobalt-blue);
+}
+
+button {
+  border: none;
+  background: var(--dark-gray-blue);
+  width: 100%;
+  padding: 20px 0;
+  border-radius: 50px;
+  color: var(--white);
+  font-size: 20px;
+  margin-top: 40px;
+}
+
+.attribution {
+  font-size: 11px;
+  color: #1F3251;
+  padding: 20px;
+}
+
+@media (min-width:320px) and (max-width:740px) {
+  main {
+    flex-direction: column;
+  }
+}
