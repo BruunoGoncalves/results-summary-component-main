@@ -209,6 +209,11 @@ button {
   margin-top: 40px;
 }
 
+button:hover {
+  background: var(--cobalt-blue);
+  cursor: pointer;
+}
+
 .attribution {
   font-size: 11px;
   color: #1F3251;

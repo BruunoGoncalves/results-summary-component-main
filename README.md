@@ -1,7 +1,5 @@
 # Frontend Mentor - Results summary component
 
-![Design preview for the Results summary component coding challenge](./design/desktop-preview.jpg)
-
 ## Welcome! 👋
 
 # Results Summary
@@ -38,4 +36,4 @@ Este é o meu projeto para o desafio de codificação do componente de um Sumár
 
 ### Links
 
-- Solution URL: [QR Code](https://bruunogoncalves.github.io/qr-code-component-main/)
+- Solution URL: [QR Code](https://bruunogoncalves.github.io/results-summary-component-main/)
